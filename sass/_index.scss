@@ -1,0 +1,187 @@
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+// header css setting
+.header {
+  background: url(../images/Hero.png) no-repeat center center / cover;
+  padding: 10%;
+  width: 100%;
+  position: relative;
+  &__title {
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 3.89px;
+    text-align: center;
+  }
+  &__selection {
+    width: 50%;
+    padding: 5px 0;
+    display: block;
+    margin: 5% auto;
+    background: rgba(255, 255, 255, 0.7);
+    border: 3px solid #ffffff;
+    border-radius: 3px;
+  }
+}
+
+.hotArea {
+  position: absolute;
+  left: 11%;
+  bottom: -20%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 78%;
+  margin: 0 auto;
+  padding: 18px 26px;
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 2px 0 14px;
+  }
+  &__btn {
+    width: 16.25%;
+    margin-left: 23px;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 0;
+    border: none;
+  }
+}
+.bgc-purple {
+  background: #8a82cc;
+}
+.bgc-pink {
+  background: #ffa782;
+}
+.bgc-yellow {
+  background: #f5d005;
+}
+.bgc-blue {
+  background: #559ac8;
+}
+
+// footer css setting
+.footer {
+  width: 100%;
+  // margin: 5% 0 0;
+  background: #559ac8;
+  &__title {
+    color: white;
+    font-size: 14px;
+    padding: 24px 0;
+    text-align: center;
+  }
+  &__ref {
+    display: block;
+    color: #ffd366;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+.divide {
+  margin-top: 10%;
+  position: relative;
+  width: 100%;
+  &__icon {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    color: #559ac8;
+  }
+  &:before {
+    border-bottom: 2px dashed #559ac8;
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 40%;
+    left: 8.5%;
+    top: 12.5%;
+  }
+  &:after {
+    border-bottom: 2px dashed #559ac8;
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 40%;
+    right: 8.5%;
+    top: 12.5%;
+  }
+}
+
+.content {
+  margin: 5% auto;
+  width: 100%;
+  &__title {
+    font-size: 36px;
+    color: #8a82cc;
+    text-align: center;
+  }
+  &__lists {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.content__detail {
+  width: 45%;
+  margin: 2.5%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.detail__top {
+  width: 100%;
+  position: relative;
+}
+.detail__place {
+  // background: url("https://khh.travel/image/942/640x480") no-repeat center
+  // center/ cover;
+  // max-width: 640px;
+  // height: 480px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4% 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+.detail__name {
+  font-size: 24px;
+  padding: 14px 0;
+  font-weight: normal;
+}
+.detail__opentime {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 4% 0;
+  &Text {
+    margin-left: 9px;
+  }
+}
+.detail__address {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 4% 0;
+  &Text {
+    margin-left: 9px;
+  }
+}
+.detail__phonenticket {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2% 4% 2%;
+}
+.detail__phone,
+.detail__ticket {
+  display: flex;
+  // flex-wrap: wrap;
+  &Text {
+    margin-left: 9px;
+  }
+}
