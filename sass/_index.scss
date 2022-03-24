@@ -24,7 +24,11 @@
     border-radius: 3px;
   }
 }
-
+@include m-device() {
+  .header__title {
+    font-size: 32px;
+  }
+}
 .hotArea {
   position: absolute;
   left: 11%;
@@ -47,6 +51,15 @@
     color: white;
     padding: 5px 0;
     border: none;
+  }
+}
+@include m-device() {
+  .hotArea {
+    bottom: -60%;
+    &__btn {
+      width: 32.5%;
+      margin-bottom: 5px;
+    }
   }
 }
 .bgc-purple {
@@ -110,7 +123,11 @@
     top: 12.5%;
   }
 }
-
+@include m-device() {
+  .divide {
+    margin-top: 35%;
+  }
+}
 .content {
   margin: 5% auto;
   width: 100%;
@@ -124,12 +141,24 @@
     width: 100%;
     flex-wrap: wrap;
   }
+  &__pageBtns{
+    text-align: center;
+  }
+  &__page{
+    margin: 5px;
+  }
 }
 .content__detail {
   width: 45%;
   margin: 2.5%;
   background: #ffffff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+@include m-device() {
+  .content__detail {
+    width: 90%;
+    margin: 5%;
+  }
 }
 .detail__top {
   width: 100%;
@@ -177,10 +206,26 @@
   justify-content: space-between;
   padding: 2% 4% 2%;
 }
-.detail__phone,
+.detail__phone {
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+  &Img {
+    width: 12px;
+    height: 20px;
+  }
+  &Text {
+    margin-left: 9px;
+  }
+}
 .detail__ticket {
   display: flex;
+  align-items: center;
   // flex-wrap: wrap;
+  &Img {
+    width: 20px;
+    height: 20px;
+  }
   &Text {
     margin-left: 9px;
   }
