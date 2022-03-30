@@ -316,8 +316,23 @@ img {
   text-align: center;
 }
 
+.content__prePage {
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.content__nextPage {
+  margin: 5px;
+  border-radius: 3px;
+}
+
 .content__page {
   margin: 5px;
+  border-radius: 3px;
+}
+
+.content__page--active {
+  background-color: #b8b3b3;
 }
 
 .content__detail {

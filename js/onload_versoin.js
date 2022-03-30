@@ -20,12 +20,12 @@ function loadData(requestURL) {
           }
       }
       for (let index of Object.entries(administrativeAreas_obj)) {
-    var area_selection = document.createElement('option');
-    area_selection.textContent = index[1];
-    area_selection.value = index[0];
-    var select_bar = document.querySelector('.header__selection');
-    select_bar.appendChild(area_selection);
-    }
+        var area_selection = document.createElement('option');
+        area_selection.textContent = index[1];
+        area_selection.value = index[0];
+        var select_bar = document.querySelector('.header__selection');
+        select_bar.appendChild(area_selection);
+        }
 
     var selected = document.querySelector('#areaId');
     selected.addEventListener('change', getInfo, false);
@@ -107,15 +107,3 @@ function loadData(requestURL) {
     };
 }
 loadData(requestURL);
-
-// setTimeout(function(){
-//     // console.log(data);
-//     // console.log(administrativeAreas_obj);
-    
-// }, 3000);
-
-
-// function (e) {
-//     console.log(e.target.nodeName);
-//     if (e.target.nodeName !== "BUTTON") return;
-// }

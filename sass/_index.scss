@@ -144,8 +144,20 @@
   &__pageBtns{
     text-align: center;
   }
+  &__prePage{
+    margin: 5px;
+    border-radius: 3px;
+  }
+  &__nextPage{
+    margin: 5px;
+    border-radius: 3px;
+  }
   &__page{
     margin: 5px;
+    border-radius: 3px;
+  }
+  &__page--active{
+    background-color: rgb(184, 179, 179);
   }
 }
 .content__detail {
