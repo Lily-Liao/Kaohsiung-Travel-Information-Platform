@@ -52,6 +52,9 @@
     padding: 5px 0;
     border: none;
   }
+  &__btn:hover{
+    cursor: pointer;
+  }
 }
 @include m-device() {
   .hotArea {
@@ -176,6 +179,18 @@
   width: 100%;
   position: relative;
 }
+.detail__imgContainer{
+  position: relative;
+  width:100%;
+  // content: '';
+  display: block;
+  padding-bottom: 50%;
+}
+.detail__img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .detail__place {
   // background: url("https://khh.travel/image/942/640x480") no-repeat center
   // center/ cover;
@@ -197,23 +212,36 @@
 }
 .detail__opentime {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  align-items: center;
   padding: 2% 4% 0;
+  &Img{
+    width: 18px;
+    height: 18px;
+  }
   &Text {
     margin-left: 9px;
+    padding: 5px;
   }
 }
 .detail__address {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  // flex-wrap: wrap;
   padding: 2% 4% 0;
+  &Img{
+    width: 16px;
+    height: 20px;
+  }
   &Text {
     margin-left: 9px;
+    padding: 5px;
   }
 }
 .detail__phonenticket {
   width: 100%;
   display: flex;
+  // align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2% 4% 2%;
@@ -228,6 +256,7 @@
   }
   &Text {
     margin-left: 9px;
+    padding: 5px;
   }
 }
 .detail__ticket {
@@ -240,5 +269,6 @@
   }
   &Text {
     margin-left: 9px;
+    padding: 5px;
   }
 }
