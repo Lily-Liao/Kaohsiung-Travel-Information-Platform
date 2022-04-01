@@ -24,7 +24,7 @@ fetch(requestURL)
         }
 
         // get selected zone info
-        function getInfo(e) {
+        const getInfo = (e) => {
             if (!(e.target.nodeName === "BUTTON" || e.target.nodeName == "SELECT")) return
             const selectArea = e.target.value;
             const areaTitle = document.querySelector('.content__title');
@@ -62,7 +62,7 @@ fetch(requestURL)
                 contentPageBtns.appendChild(pageBtn);
             }
             console.log(dataList);
-            function showData(currentPage){
+            const showData = (currentPage) => {
                 window.document.body.scrollTop = 0;
                 window.document.documentElement.scrollTop = 0;
                 document.querySelectorAll('.content__page').forEach(
@@ -112,7 +112,7 @@ fetch(requestURL)
                 }
                 const contentLists = document.querySelector('.content__lists');
                 contentLists.innerHTML = listStr;
-            }
+            };
             showData(currentPage);
             
             // 監聽換頁btn
@@ -150,7 +150,7 @@ fetch(requestURL)
 
            
             
-        }
+        };
         // 下拉式選單監聽
         const selected = document.querySelector('#areaId');
         selected.addEventListener('change', getInfo, false);
