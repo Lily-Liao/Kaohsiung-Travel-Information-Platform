@@ -15,13 +15,20 @@ fetch(requestURL)
             }
         });
         // add zone data to dropdownlist
-        for (let index of Object.entries(administrativeAreasObj)) {
+        /*for (let index of Object.entries(administrativeAreasObj)) {
             const areaSelection = document.createElement('option');
             areaSelection.textContent = index[1];
             areaSelection.value = index[0];
             const selectBar = document.querySelector('.header__selection');
             selectBar.appendChild(areaSelection);
-        }
+        }*/
+        Object.entries(administrativeAreasObj).map((value) => {
+            const areaSelection = document.createElement('option');
+            areaSelection.textContent = value[1];
+            areaSelection.value = value[0];
+            const selectBar = document.querySelector('.header__selection');
+            selectBar.appendChild(areaSelection);
+        })
 
         // get selected zone info
         const getInfo = (e) => {
