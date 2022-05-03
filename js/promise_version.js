@@ -22,7 +22,7 @@ fetch(requestURL)
             const selectBar = document.querySelector('.header__selection');
             selectBar.appendChild(areaSelection);
         }*/
-        Object.entries(administrativeAreasObj).map((value) => {
+        Object.entries(administrativeAreasObj).forEach((value) => {
             const areaSelection = document.createElement('option');
             areaSelection.textContent = value[1];
             areaSelection.value = value[0];
